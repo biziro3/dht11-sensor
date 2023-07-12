@@ -1,0 +1,5 @@
+DHT11 sensor
+10k potentiometre
+arduino uno R3
+lcd
+220 ohm
