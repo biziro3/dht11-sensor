@@ -22,7 +22,7 @@ void setup() {
 
 }
 
-void faile(){
+void fail_to_connect(){
   lcd.setCursor(0, 0);
   lcd.print("faild to read");
   lcd.setCursor(0,1);
@@ -35,7 +35,7 @@ void loop() {
   float t = dht.readTemperature();
 
   if(isnan(t) || isnan(h)){
-    faile();
+    faile_to_connect();
     lcd.clear();
   }else{
    if( (h>=30 && h<=50) && (t>=20 && t<=35)){
